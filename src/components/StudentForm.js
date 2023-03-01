@@ -22,6 +22,9 @@ export default function StudentForm({ refresh, setIsForm }) {
         formData.append('cv', cv);
         formData.append('technologies', JSON.stringify(technologies));
 
+        // A SUPPR
+        console.log(formData);
+
         try {
             const response = await fetch('/api/students', {
                 method: 'POST',

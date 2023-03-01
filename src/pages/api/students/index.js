@@ -19,6 +19,15 @@ const handler = async (req, res) => {
     } else if (req.method === 'POST') {
         try {
             upload.any()(req, res, async (err) => {
+                // A SUPPR
+                console.log(
+                    'données recues : ',
+                    req.body.title,
+                    req.body.name,
+                    req.body.firstname,
+                    req.body.technologies
+                );
+                console.log('fichiers ?', req.files.fielname);
                 if (err) {
                     console.error(err);
                     res.status(400).json({ error: 'Error uploading file.' });
@@ -32,6 +41,7 @@ const handler = async (req, res) => {
                         (file) => file.fieldname === 'cv'
                     );
 
+                    // A SUPPR
                     console.log({ title, name, firstName, techArray });
                     const newStudent = new Student({
                         title: title,
