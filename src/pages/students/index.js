@@ -35,7 +35,7 @@ export default function Students() {
     return (
         <Layout home={false}>
             <h1 className={styles.title}>
-                Liste des étudiants M2i présent le Jeudi 2 mars 2023
+                Liste des étudiants M2i présent le Jeudi 2 mars 2023 (fictive)
             </h1>
             {isLoading ? (
                 <div>Loading ...</div>
