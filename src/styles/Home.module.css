@@ -1,0 +1,19 @@
+.home_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.btn_go_to_students {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.btn_go_to_students:hover {
+  background-color: rgb(255, 248, 248);
+  box-shadow: 1px 3px 4px 0px #f00;
+}

@@ -1,0 +1,59 @@
+.form_container {
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+/* styles pour les étiquettes et les champs de saisie */
+.label_form {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.form_field {
+  margin-bottom: 1rem;
+}
+
+.input_text, .input_file, .input_text_techno {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input_text_techno {
+  margin-bottom: 0.3rem;
+}
+
+.btn_container {
+  text-align: center;
+}
+
+/* styles pour le bouton de soumission */
+.btn_submit {
+  background-color: #0b3d14;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn_submit:hover {
+  background-color: #199930;
+}
+
+.btn_ajout_techno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.plus_svg {
+  cursor: pointer;
+}

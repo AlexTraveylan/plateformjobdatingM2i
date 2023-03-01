@@ -1,0 +1,28 @@
+.student_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.title {
+    text-align: center;
+    margin: 15px 0 ;
+}
+
+.plus_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form_container{
+    margin-bottom: 20px;
+}
+
+.message_add_btn {
+  font-size: 0.7rem;
+}
