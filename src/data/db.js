@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 dotenv.config();
-const db_adress = process.env.MONGODB_URI;
+const db_adress = process.env.REACT_APP_DB_ADDRESS;
 
 const connectDb = (handler) => async (req, res) => {
     if (mongoose.connections[0].readyState) {
