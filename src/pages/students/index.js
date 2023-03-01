@@ -25,7 +25,7 @@ export default function Students() {
         setIsLoading(true);
         const response = await fetch('/api/students');
         const data = await response.json();
-        setStudents(data);
+        setStudents(data.sort(() => Math.random() - 0.5));
     }
 
     useEffect(() => {

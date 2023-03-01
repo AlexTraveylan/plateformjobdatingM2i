@@ -2,11 +2,11 @@ import connectDb from '../../../data/db';
 import Student from '../../../models/Student';
 import upload from '../../../middlewares/upload';
 
-// export const config = {
-//     api: {
-//         bodyParser: false,
-//     },
-// };
+export const config = {
+    api: {
+        bodyParser: false,
+    },
+};
 
 const handler = async (req, res) => {
     if (req.method === 'GET') {
@@ -19,14 +19,6 @@ const handler = async (req, res) => {
     } else if (req.method === 'POST') {
         try {
             upload.any()(req, res, async (err) => {
-                // A SUPPR
-                console.log(
-                    'données recues : ',
-                    req.body.title,
-                    req.body.name,
-                    req.body.firstname,
-                    req.body.technologies
-                );
                 console.log('fichiers ?', req.files.fielname);
                 if (err) {
                     console.error(err);
@@ -41,8 +33,6 @@ const handler = async (req, res) => {
                         (file) => file.fieldname === 'cv'
                     );
 
-                    // A SUPPR
-                    console.log({ title, name, firstName, techArray });
                     const newStudent = new Student({
                         title: title,
                         name: name,
