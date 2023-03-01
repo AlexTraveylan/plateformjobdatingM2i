@@ -2,11 +2,11 @@ import connectDb from '../../../data/db';
 import Student from '../../../models/Student';
 import upload from '../../../middlewares/upload';
 
-export const config = {
-    api: {
-        bodyParser: false,
-    },
-};
+// export const config = {
+//     api: {
+//         bodyParser: false,
+//     },
+// };
 
 const handler = async (req, res) => {
     if (req.method === 'GET') {
